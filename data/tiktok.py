@@ -2,11 +2,11 @@
 import telebot
 from telebot import *
 import time
-print("Бот запущен!")
-print("Бот запущен и готов к работе!")
+print("Бот запущен! для выхода [ctrl + c]")
+print("Бот запущен и готов к работе! для выхода [ctrl + c]")
 log = open('bot-log.txt', 'a+', encoding='utf-8')
 ID = ''
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot("7287235181:AAEDQnYJIowd0wdHtWJB20YCHswEEWj9D9g")
 try:
 	bot.send_message(ID, '!Бот запущен!') 
 except:
