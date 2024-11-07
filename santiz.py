@@ -2,6 +2,7 @@ import platform
 import os
 import sys
 import socket
+import zipfile
 import pystyle
 import requests
 import random
@@ -1124,8 +1125,7 @@ def termux_posobye(url):
     webbrowser.open_new_tab(url)
 
 
-banner= """
-                                               
+banner = '''⠀⠀⠀⠀⠀⠀⠀⠀
                                          
 
        
@@ -1136,7 +1136,7 @@ banner= """
                                                               ██████╔╝██║░░██║██║░╚███║░░░██║░░░██║███████╗  ██████╔╝╚█████╔╝██╔╝╚██╗░░░██║░░░╚█████╔╝╚█████╔╝███████╗
                                                               ╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚═╝╚══════╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝
 
-"""
+'''
 
 menu = """
                ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
@@ -1724,7 +1724,7 @@ while True:
               input(Colorate.Vertical(Colors.white_to_blue, "\n[+] Нажмите Enter, чтобы вернуться в главное меню."))
             if choice == '26':
               import subprocess
-              subprocess.run(['python', 'soft1.py'])
+              subprocess.run(['python', '/doxtool/KRIK.SANTIZ/data/soft1.py'])
               input(Colorate.Vertical(Colors.white_to_blue, "\n[+] Нажмите Enter, чтобы вернуться в главное меню."))    
             if choice == '27':
               spam_bot()
@@ -1805,7 +1805,7 @@ while True:
             
             if choice == "46":
                 import subprocess
-                subprocess.run(['python', 'softsnoser.py'])
+                subprocess.run(['python', '/doxtool/KRIK.SANTIZ/data/softsnoser.py'])
                 input(Colorate.Vertical(Colors.white_to_blue, "\n[+] Нажмите Enter, чтобы вернуться в главное меню."))
 
             if choice == '47':
@@ -11866,7 +11866,7 @@ http://telegram.org/support
             
             if choice == "100":
                 import subprocess
-                subprocess.run(['python', 'tgph.py'])
+                subprocess.run(['python', '/doxtool/KRIK.SANTIZ/data/tgph.py'])
                 input(Colorate.Vertical(Colors.white_to_blue, "\n[+] Нажмите Enter, чтобы вернуться в главное меню."))
 
                 input(Colorate.Vertical(Colors.white_to_blue, "\n[+] Нажмите Enter, чтобы вернуться в главное меню."))
